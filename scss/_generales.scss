@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo {
+    color: navy;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: initial;
+    font-weight: bolder;
+    text-transform: uppercase;
+    line-height: 2em;
+}
+
+
+
+p {
+    color: rgb(255, 255, 255);
+    background-color: navy;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    word-spacing: 12px;
+
+}
+
+ol {
+    color: rgb(244, 244, 248);
+    background-color: rgb(20, 28, 56);
+    font-family: 'Nanum Gothic', sans-serif;
+    list-style-position: inside;
+
+}
+
+th {
+    color: rgb(6, 37, 58);
+    font-family: 'Nanum Gothic', sans-serif;
+
+}
+
+h2 {
+    color: rgb(32, 127, 182);
+    font-family: 'Nanum Gothic', sans-serif;
+
+}
+
+/*ul {
+    list-style: none;
+    background-color: papayawhip;
+    font-size: 0;
+
+}*/
+
+a {
+    text-decoration: none;
+    color: navy;
+}
+
+section p {
+    color: rgb(177, 177, 177);
+    font-family: 'Nanum Gothic', sans-serif;
+
+}
+
+.subTitulo {
+    color: navy;
+    text-decoration: underline;
+}
+
+/*nav ul li {
+    display: inline-block;
+    background-color: papayawhip;
+    width: 15%;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}*/
+
+section {
+    border: 3px solid gray;
+    background-color: lightskyblue;
+    padding: 20px;
+}
+
+
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+    color: peru;
+}
+
+/*ul ul {
+    position: absolute;
+    display: none;
+}
+
+/*ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul ul li a {
+    color: black;
+    font-size: 12px;
+}*/
+
+header {
+    grid-area: header1;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    padding: 2em;
+    align-items: center;
+    grid-column: 1 / span 3;
+}
+
+
+.segurosPersonas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.personas article {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 40%;
+}
+
+.imgArticle {
+width: 300px;
+}
+
+.segurosEmpresas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.empresas article {
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+form {
+    min-width: fit-content;
+}
+
+.container {
+    display: grid;
+    border: navy solid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+}
+
+container>* {
+    background-color: rgb(245, 242, 206);
+    border: 1px solid rgb(31, 135, 196);
+    text-align: center;
+    color: rgb(42, 132, 173);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: repeat(5, 100px);
+
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+    header {
+        grid-column: 1 / span 5;
+    }
+
+    .container {
+        grid-template-rows: repeat(5, 100px);
+        display: grid;
+        border: navy solid;
+        grid-template-columns: 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+    }
+}
+
+.gradiente {
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(to left, rgb(212, 228, 238), rgb(19, 47, 206));
+}
+
+.img {
+    transition: transform 0.5s ease;
+}
+
+.img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+/*.menu {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    height: 1vh;
+    grid-area: menu1;
+}
+
+.menu li {
+    margin: 40px 20px;
+    font-size: 20px;
+    transition: transform 0.5s ease;
+}
+
+.menu li:hover {
+    transform: translateX(0.5em);
+    cursor: pointer;
+    color: rgb(41, 41, 151);
+}*/
+
+.videoDoc {
+    display: flex;
+    width: 90%;
+    height: auto;
+    align-items: center;
+    background-image: linear-gradient(to right blue, );
+    justify-content: center;
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 50%;
+    min-height: 150vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 50px 1fr 100px 200px;
+    grid-template-areas: "header1 header1 header1"
+        "menu1 menu1 menu1""footer1 footer1 footer1";
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    main {
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: 150px 100px 1fr 100px;
+        grid-template-areas: "header1 header1 header1"
+            "menu1 menu1 menu1""footer1 footer1 footer1";
+    }
+}
+
+.contenedor {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.rectangulo {
+    background-color: #cccccc;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.rectangulo__img {
+    width: 300px;
+    height: 180px;
+    margin-right: 30px;
+}
+
+.rectangulo__titulo {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.rectangulo__parrafo {
+    line-height: 28px;
+    font-size: 1rem;
+}
+
+.boton {
+    height: 60px;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.divContenedorArticle {
+border: 5px solid #4472CA;
+border-radius: 5px;
+width: 100%;
+display: flex;
+justify-content: space-around;
+}
+.articleContenedor{
+    padding: 10px;
+}
+.contacto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
+
+
+.contacto__titulo{
+    color: orangered;
+    display: flex;
+    align-items:stretch;
+}
+.titulo__nosotros{
+    color: rgb(158, 174, 190);
+}
+@media (min-width: 320px) and (max-width: 400px) {
+    .contenedor {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .divContenedorArticle {
+        border: 5px solid #4472CA;
+        border-radius: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        }
+}

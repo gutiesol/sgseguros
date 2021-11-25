@@ -1,0 +1,15 @@
+header {
+    grid-area: header1;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    padding: 2em;
+    align-items: center;
+    grid-column: 1 / span 3;
+}
+.logo{
+    padding: 1em;
+}
+.logo__img{
+    margin-bottom: 20px;
+}

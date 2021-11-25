@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/estilo.css">
+    <meta name="description"content="Cotiza tu seguro y contrata 100% online. Trabajamos con las aseguradoras mas conocidas del pais">
+    <meta name="keywords" content="SEGUROS, ASESORES, COTIZAR, TRANSPORTE, ART, VIDA">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="img/SG LOGO CIRCULO.png" alt="logosg" width="100" height="100">
+            <h1 class="titulo">SG Seguros</h1>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="index.html">Inicio <span
+                            class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="nosotros.html">Nosotros</a>
+                    <a class="nav-item nav-link" href="siniestros.html">Siniestros</a>
+                    <a class="nav-item nav-link" href="novedades.html">Novedades</a>
+                    <a class="nav-item nav-link" href="seguros.html">Seguros</a>
+                    <a class="nav-item nav-link" href="contacto.html">Contacto</a>
+                </div>
+            </div>
+        </nav>
+        <section class="container-fluid">
+            <div class="contacto">
+            <h1 class="contacto__titulo">Contacto</h1>
+                <form>
+                    <br>
+                    <label for="enQuePodemosAyudarte">En que podemos ayudarte? :</label>
+                    <select name="enQuePodemosAyudarte">
+                        <option name="CG">Consultas Generales</option>
+                        <option name="C">Cotizaciones</option>
+                        <option name="S">Sugerencias</option>
+                        <option name="D">Denuncias</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" required name="nombre">
+                    <br>
+                    <br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" required name="apellido">
+                    <br>
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="email" required name="email">
+                    <br>
+                    <br>
+                    <label for="mensaje">Mensaje:</label>
+                    <br><br>
+                    <textarea name="escribamensaje" rows="10" cols="20"> </textarea>
+                    <br><br>
+                    <br>
+                    <div id="newsletter"> Desea recibir nuestro newsletter?
+                        <input type="checkbox" name="acepta" value="1">
+                    </div>
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </form>
+                <div>
+                    <h2>Donde encontrarnos?</h2>
+                    <iframe class="container-fluid"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8864756097!2d-58.385031285260695!3d-34.607032080458566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacff40d3947%3A0x80fce781e0da194d!2sBartolom%C3%A9%20Mitre%2C%20C1013%20CABA!5e0!3m2!1ses-419!2sar!4v1633990206166!5m2!1ses-419!2sar"
+                        width="50%" height="50%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+        <div class="footer footer--blue">
+            <footer>
+                <h4>SUSCRIBITE A NUESTRO NEWSLETTER</h4>
+                <h5>Te enviaremos las ultimas novedades y promociones </h5>
+                <textarea class="correoElectronico">Correo Electronico</textarea>
+                <a href="#" class="boton boton-contacto">
+                    <span class="boton-contacto">Suscribirme ! </span>
+                    <i class="far fa-bell"></i>
+                </a>
+                <div class="redesSociales">
+                    <img src="img/whatsapp.png" style="float:right" alt="whatsapp">
+                    <img src="img/facebook.png" style="float:right" alt="facebook">
+                    <img src="img/instagram.png" style="float:right" alt="instagram">
+                </div>
+            </footer>
+        </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+    </main>
+</body>
+
+</html>
